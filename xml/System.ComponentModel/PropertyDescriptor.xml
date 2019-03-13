@@ -520,7 +520,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="attributeList" Type="System.Collections.IList" />
+        <Parameter Name="attributeList" Type="System.Collections.IList" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="attributeList">An <see cref="T:System.Collections.IList" /> that lists the attributes in the parent class. Initially, this is empty.</param>
@@ -907,8 +907,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="instance" Type="System.Object" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of the invocation target.</param>
@@ -1048,7 +1048,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="component" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="component">The component for which to retrieve event handlers.</param>
@@ -1480,6 +1480,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>When overridden in a derived class, this method returns <see langword="true" /> if the current value of the property is different from its default value. It looks for a default value by first looking for a <see cref="T:System.ComponentModel.DefaultValueAttribute" />. If the method finds this attribute, it compares the value of the attribute with the property's current value. If this method cannot find a <see cref="T:System.ComponentModel.DefaultValueAttribute" />, it looks for a "ShouldSerializeMyProperty" method that you need to implement. If it is found, <see cref="M:System.ComponentModel.PropertyDescriptor.ShouldSerializeValue(System.Object)" /> invokes it. If this method cannot find a <see cref="T:System.ComponentModel.DefaultValueAttribute" /> or a "ShouldSerializeMyProperty" method, it cannot create optimizations and it returns <see langword="true" />.
+ 
  <block subset="none" type="note"><para>  
  The <see cref="T:System.ComponentModel.Design.ComponentDesigner" /> class implements special serialization logic for inherited components. For more information, see <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.  
 </para></block></para>

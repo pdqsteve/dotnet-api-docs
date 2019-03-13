@@ -328,7 +328,7 @@
         <ReturnType>System.Security.Cryptography.SymmetricAlgorithm</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algName" Type="System.String" />
+        <Parameter Name="algName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="algName">The name of the specific implementation of the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> class to use.</param>
@@ -774,7 +774,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member overrides <see cref="M:System.Object.Finalize" />, and more complete documentation might be available in that topic.
+
+Allows an <see cref="T:System.Object" /> to attempt to free resources and perform other cleanup operations before the <see cref="T:System.Object" /> is reclaimed by garbage collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1510,8 +1512,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="ValidKeySize">
@@ -1542,7 +1546,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bitLength" Type="System.Int32" />
+        <Parameter Name="bitLength" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="bitLength">The length, in bits, to check for a valid key size.</param>

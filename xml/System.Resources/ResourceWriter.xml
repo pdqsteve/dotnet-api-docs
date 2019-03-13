@@ -28,6 +28,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Resources.IResourceWriter</InterfaceName>
     </Interface>
   </Interfaces>
@@ -68,8 +71,8 @@
     </remarks>
     <altmember cref="T:System.Resources.IResourceWriter" />
     <altmember cref="T:System.IDisposable" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Desktop Apps</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Desktop Apps</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -161,7 +164,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="fileName">The output file name.</param>
@@ -223,8 +226,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.Byte[]" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Byte[]" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of the resource.</param>
@@ -252,7 +255,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this <see cref="T:System.Resources.ResourceWriter" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -281,8 +284,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.IO.Stream" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.IO.Stream" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of the resource to add.</param>
@@ -315,7 +318,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -349,8 +352,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of the resource.</param>
@@ -381,7 +384,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this <see cref="T:System.Resources.ResourceWriter" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -447,7 +450,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this ResourceWriter.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -476,9 +479,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="value" Type="System.IO.Stream" />
-        <Parameter Name="closeAfterWrite" Type="System.Boolean" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.IO.Stream" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="closeAfterWrite" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of the resource to add.</param>
@@ -513,7 +516,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResourceData">
@@ -543,9 +546,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="typeName" Type="System.String" />
-        <Parameter Name="serializedData" Type="System.Byte[]" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="typeName" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="serializedData" Type="System.Byte[]" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">A name that identifies the resource that contains the added data.</param>

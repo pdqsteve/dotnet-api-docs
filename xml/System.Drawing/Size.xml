@@ -33,7 +33,7 @@
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>Serializable</AttributeName>
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -169,8 +169,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sz1" Type="System.Drawing.Size" />
-        <Parameter Name="sz2" Type="System.Drawing.Size" />
+        <Parameter Name="sz1" Type="System.Drawing.Size" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+        <Parameter Name="sz2" Type="System.Drawing.Size" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="sz1">The first <see cref="T:System.Drawing.Size" /> structure to add.</param>
@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Size.Add%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `AddSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following code example demonstrates how to use the <xref:System.Drawing.Size.Add%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `AddSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#11)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#11)]  
@@ -286,7 +286,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Drawing.Size" />
+        <Parameter Name="other" Type="System.Drawing.Size" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -447,7 +447,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
@@ -540,8 +540,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Drawing.Size" />
-        <Parameter Name="right" Type="System.Int32" />
+        <Parameter Name="left" Type="System.Drawing.Size" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -573,8 +573,8 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Drawing.Size" />
-        <Parameter Name="right" Type="System.Single" />
+        <Parameter Name="left" Type="System.Drawing.Size" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="System.Single" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -790,8 +790,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Drawing.Size" />
-        <Parameter Name="right" Type="System.Int32" />
+        <Parameter Name="left" Type="System.Drawing.Size" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -823,8 +823,8 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Drawing.Size" />
-        <Parameter Name="right" Type="System.Single" />
+        <Parameter Name="left" Type="System.Drawing.Size" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="System.Single" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -856,8 +856,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Int32" />
-        <Parameter Name="right" Type="System.Drawing.Size" />
+        <Parameter Name="left" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="System.Drawing.Size" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -889,8 +889,8 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Single" />
-        <Parameter Name="right" Type="System.Drawing.Size" />
+        <Parameter Name="left" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="System.Drawing.Size" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1030,8 +1030,8 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sz1" Type="System.Drawing.Size" />
-        <Parameter Name="sz2" Type="System.Drawing.Size" />
+        <Parameter Name="sz1" Type="System.Drawing.Size" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+        <Parameter Name="sz2" Type="System.Drawing.Size" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="sz1">The <see cref="T:System.Drawing.Size" /> structure on the left side of the subtraction operator.</param>
@@ -1042,7 +1042,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Size.Subtract%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `SubtractSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following code example demonstrates how to use the <xref:System.Drawing.Size.Subtract%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `SubtractSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#12)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#12)]  

@@ -33,7 +33,7 @@
 ## Remarks  
  The following list identifies tools and classes that use the <xref:System.Xml.Serialization.CodeIdentifiers>:  
   
--   The [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88), or the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class, while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document.  
+-   The [Web Services Description Language Tool (Wsdl.exe)](https://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88), or the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class, while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document.  
   
 -   The [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) tool while generating classes from XML Schema Definition (XSD) documents.  
   
@@ -115,7 +115,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="caseSensitive" Type="System.Boolean" />
+        <Parameter Name="caseSensitive" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="caseSensitive">

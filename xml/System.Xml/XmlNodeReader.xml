@@ -888,13 +888,26 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="i">The index of the attribute.</param>
+        <summary>Gets the value of the attribute with the specified index.</summary>
+        <value>The value of the specified attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+This property does not move the reader.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlNodeReader.AttributeCount" />.</exception>
+        <altmember cref="Overload:System.Xml.XmlNodeReader.GetAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -919,7 +932,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -950,15 +963,27 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="namespaceURI" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="namespaceURI" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceURI">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The local name of the attribute.</param>
+        <param name="namespaceURI">The namespace URI of the attribute.</param>
+        <summary>Gets the value of the attribute with the specified local name and namespace URI.</summary>
+        <value>The value of the specified attribute. If the attribute is not found, <see langword="null" /> is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+This property does not move the reader.
+
+]]></format>
+        </remarks>
+        <altmember cref="Overload:System.Xml.XmlNodeReader.GetAttribute" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -1702,9 +1727,18 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the quotation mark character used to enclose the value of an attribute node.</summary>
+        <value>XmlNodeReader always uses a double quote (").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+>  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -1857,9 +1891,9 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer into which to copy the resulting text. This value cannot be <see langword="null" />.</param>
@@ -1925,9 +1959,9 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer into which to copy the resulting text. This value cannot be <see langword="null" />.</param>
@@ -1993,9 +2027,9 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer into which to copy the resulting text. This value cannot be <see langword="null" />.</param>
@@ -2064,9 +2098,9 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">The buffer into which to copy the resulting text. This value cannot be <see langword="null" />.</param>
@@ -2412,7 +2446,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="scope" Type="System.Xml.XmlNamespaceScope" />
+        <Parameter Name="scope" Type="System.Xml.XmlNamespaceScope" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="scope">
@@ -2459,7 +2493,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="prefix">
@@ -2506,7 +2540,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="namespaceName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="namespaceName">
